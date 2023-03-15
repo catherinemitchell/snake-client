@@ -12,9 +12,11 @@ const connect = function () {
     console.log("Server says: ", data);
   });
   
-
   conn.on("connect", () => {
-    console.log("Connected");
+    conn.write("Name: CLM")
+    console.log("Successfully connected to game server");
+
+    
   });
   return conn;
 
