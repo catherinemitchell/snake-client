@@ -1,24 +1,5 @@
-const net = require("net");
-
-const connect = function () {
-  const conn = net.createConnection({
-    host: "165.227.47.243",
-    port: 50541
-  });
-
-  conn.setEncoding("utf8");
-
-  conn.on("data", (data) => {
-    console.log("Server says: ", data);
-  });
-  
-
-  conn.on("connect", () => {
-    console.log("Connected");
-  });
-  return conn;
-
-};
+//sayHello and myKey are just to show extra exampes for comprehension from the exports file
+const {connect /*sayHello, myKey*/ } = require('./client');
 
 
 console.log("Connecting ...");
