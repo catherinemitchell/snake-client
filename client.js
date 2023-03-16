@@ -17,12 +17,7 @@ const connect = function() {
     console.log("Successfully connected to game server");
 
     // conn.write("Move: up");
-    
-
-
   });
-
-
   return conn;
 
 };
